@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Oswald', sans-serif;
+}
+.contenido{
+	max-width: 1200px;
+	margin: auto;
+}
+#header{
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #047aedba;
+	flex-direction: row;
+	align-items: center;
+	height: 80px;
+	color: #ccc;
+	align-content: center;
+	transition: all 250ms ease-in-out;
+}
+
+#header .nav{
+	flex-grow: 1;
+}
+#header:hover{
+	background-color: #047aed;
+	height: 100px;
+}
+#header .nav ul{
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}
+#header a{
+	text-decoration: none;
+	color: #ccc;
+	font-size: 2rem;
+	
+}
+
+@keyframes zoom {
+	from{
+		transform: scale(1,1);
+	}
+	to{
+		transform: scale(1.1,1.1);	
+	}
+}
+.banner{
+	height: 100vh;
+	background-image: url('../assets/imagenes/hombre-ropa-deportiva-caminando.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;	
+}
+.banner .bienvenida{
+	font-weight: 600;
+	color: #fff;
+	font-size: 3rem;
+	animation-name: zoom;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+#footer{
+	min-height: 100px;
+	background-color: #000;
+	color: #fff; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	animation-name: zoom;
+	animation-timing-function: linear;
+	animation-delay: 0;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
